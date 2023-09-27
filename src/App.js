@@ -27,7 +27,7 @@ export default function App() {
       <Testimonials />
       <Faq />
       <Footer />
-      <div className='fixed md:bottom-10 md:right-10 lg:bottom-4 lg:right-4 border-4 p-1 rounded-full border-green-500' >
+      <div className='fixed md:bottom-10 md:right-10 lg:bottom-4 lg:right-4 md:border-4 lg:border-2 md:p-1 lg:p-[2px] rounded-full border-green-500' >
         {
           (isChecked === "dark") ? (<img src={sun} onClick={handleToggleChange} alt="" className='md:w-32  lg:w-14 rounded-full bg-yellow-400 p-1' />)
             : (<img src={moon} onClick={handleToggleChange} alt="" className='md:w-32  lg:w-14  rounded-full bg-gray-500 p-1' />)
