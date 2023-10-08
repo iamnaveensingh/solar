@@ -14,7 +14,7 @@ const Contact = () => {
             <div className=' flex flex-wrap  mb-2'>
                 <div className='w-[500px]'>
 
-                    <img src={owner} className='rounded-lg h-80 m-auto hover:scale-105' alt="Owner" />
+                    <img src={owner} className='rounded-lg mb-6 h-80 m-auto hover:scale-105' alt="Owner" />
                     <p><b>Messgae: </b>Lorem,Porro tempore dignissimos quis ut magnam, repudiandae nesciunt eos est recusandae reprehenderit libero doloribus eaque eius totam voluptatum tenetur, perspiciatis, optio mollitia sed id temporibus inventore? Voluptates, expedita animi laudantium, distinctio asperiores perspiciatis modi  obcaecati, optio blanditiis.</p>
 
                 </div>
