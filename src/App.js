@@ -8,6 +8,7 @@ import Testimonials from "./Components/Testimonials/Testimonials";
 import Gallery from "./Components/Gallery";
 import sun from './Components/asset/sun.png';
 import moon from './Components/asset/moon.png';
+import Contact from "./Components/Contact";
 
 export default function App() {
   const [isChecked, setIsChecked] = useState("");
@@ -26,6 +27,7 @@ export default function App() {
       <Gallery />
       <Testimonials />
       <Faq />
+      <Contact/>
       <Footer />
       <div className='fixed md:bottom-10 md:right-10 sm:bottom-10 sm:right-10 lg:bottom-4 lg:right-4 p-[2px] right-8 bottom-10 border-2 sm:border-4 lg:border-2 md:p-1 sm:p-1 lg:p-[2px] rounded-full border-green-500' >
         {
