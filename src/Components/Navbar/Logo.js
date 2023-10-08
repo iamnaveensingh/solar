@@ -6,8 +6,8 @@ const Logo = () => {
   return (
     <>
      
-      <img src={logo} className="w-16 mr-4" alt="" />
-      <span className="self-center md:text-xl lg:text-xl sm:text-sm  font-semibold  dark:text-white">
+      <img src={logo} className="lg:w-16 w-10 lg:mr-4 mr-1" alt="" />
+      <span className="self-center md:text-xl lg:text-xl text-xs  font-semibold  dark:text-white">
         VijayShree Solar Corporation
       </span>
     </>
