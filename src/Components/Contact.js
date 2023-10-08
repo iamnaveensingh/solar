@@ -34,10 +34,10 @@ const Contact = () => {
                             Follow Us On Social Media
                         </h2>
                         <div className='flex justify-center'>
-                            <a href=""><ImFacebook2 className='hover:scale-125 hover:animate-spin text-3xl mx-4 hover:text-blue-600' /></a>
-                            <a href=""><FaTwitterSquare className='hover:scale-125 hover:animate-spin text-3xl mx-4 hover:text-blue-600' /></a>
-                            <a href=""><AiFillInstagram className='hover:scale-125 hover:animate-spin text-3xl mx-4 hover:text-blue-600' /></a>
-                            <a href=""><SiGmail className='hover:scale-125 hover:animate-spin text-3xl mx-4 hover:text-blue-600' /></a>
+                            <a href=""><ImFacebook2 className='hover:scale-125 hover:animate-spin text-4xl mx-4 hover:text-blue-600' /></a>
+                            <a href=""><FaTwitterSquare className='hover:scale-125 hover:animate-spin text-4xl mx-4 hover:text-blue-600' /></a>
+                            <a href=""><AiFillInstagram className='hover:scale-125 hover:animate-spin text-4xl mx-4 hover:text-blue-600' /></a>
+                            <a href=""><SiGmail className='hover:scale-125 hover:animate-spin text-4xl mx-4 hover:text-blue-600' /></a>
                         </div>
 
                     </div>
