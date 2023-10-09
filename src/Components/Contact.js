@@ -22,13 +22,13 @@ const Contact = () => {
                     <div className="">
 
                         <h2 className=" mb-8 text-2xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-                            VijayShree Solar Corporation
+                            Vijay Shree Solar Corporation
                         </h2>
-                        <h2><b>Owner Name : </b>VijayShree </h2>
+                        <h2><b>Owner Name : </b>Vijay Shree </h2>
                         <a href="mailto:vijayshreesolar@gmail.com">
                             <h2><b>Email : </b>vijayshreesolar@gmail.com </h2>
                         </a>
-                        <h2><b>Contact Number : </b>+91 88888 77777 </h2>
+                        <h2><b>Contact Number : </b>+91 77373 30685</h2>
                         <h2><b>Address : </b>Vijay Shree Solar Corporation, Poornima colony , Suvidha nagar in front of mariyam hospital ramganjmandi, Kota, Rajasthan 326519.</h2>
                         <h2 className=" my-8 text-xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                             Follow Us On Social Media
