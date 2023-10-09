@@ -4,6 +4,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { useState } from "react";
 
 const Navbar = () => {
+  const [active, setactive] = useState("home")
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -15,11 +16,11 @@ const Navbar = () => {
     phone === "hidden" ? setPhone("") : setPhone("hidden");
   };
 
-
+  console.log(active)
   return (
     <>
       <header >
-        <nav className="bg-gray-100 drop-shadow-lg  border-gray-200 shadow-lg px-1 lg:px-6 py-1 dark:bg-gray-800">
+        <nav className="bg-gray-100 drop-shadow-lg fixed w-full z-50 border-gray-200 shadow-lg px-1 lg:px-6 py-1 dark:bg-gray-800">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="/" className="flex items-center">
               <Logo />
@@ -36,7 +37,10 @@ const Navbar = () => {
                   </div>
                 </a>
                 <a
-                   onClick={() => scrollToSection('contact')}
+                  onClick={() => {
+                    scrollToSection('contact');
+                    setactive('contact');
+                  }}
                   className="text-white hidden lg:block hover:text-black hover:scale-105 hover:font-bold hover:bg-blue-800 bg-blue-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg px-4 lg:min-w-[140px] min-w-[113px] lg:px-5 py-1 lg:py-2 mr-1 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
                 >
                   <div className="flex text-sm  lg:text-lg">
@@ -90,8 +94,11 @@ const Navbar = () => {
               <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                 <li>
                   <a
-                    href="/"
-                    className="block py-2 pr-4 pl-3 text-black rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                    onClick={() => {
+                      scrollToSection('home');
+                      setactive('home');
+                    }}
+                    className={`block py-2 pr-4 pl-3 ${active==="home"?("dark:text-white  font-bold"):("")}  text-gray-700 rounded bg-primary-700 lg:bg-transparent dark:text-gray-400 lg:text-primary-700 lg:p-0 `}
                     aria-current="page"
                   >
                     Home
@@ -100,8 +107,11 @@ const Navbar = () => {
 
                 <li>
                   <a
-                    onClick={() => scrollToSection('work')}
-                    className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                   onClick={() => {
+                    scrollToSection('work');
+                    setactive('work');
+                  }}
+                    className={`block py-2 pr-4 pl-3 ${active==="work"?("dark:text-white  font-bold"):("")}  text-gray-700 rounded bg-primary-700 lg:bg-transparent dark:text-gray-400 lg:text-primary-700 lg:p-0 `}
                   >
                     Our Works
                   </a>
@@ -109,16 +119,22 @@ const Navbar = () => {
                 <li>
                   <a
                     // href="/testimonials"
-                    onClick={() => scrollToSection('testimonials')}
-                    className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    onClick={() => {
+                    scrollToSection('testimonials');
+                    setactive('testimonials');
+                  }}
+                    className={`block py-2 pr-4 pl-3 ${active==="testimonials"?("dark:text-white  font-bold"):("")}  text-gray-700 rounded bg-primary-700 lg:bg-transparent dark:text-gray-400 lg:text-primary-700 lg:p-0 `}
                   >
                     Reviews
                   </a>
                 </li>
                 <li>
                   <a
-                    onClick={() => scrollToSection('faq')}
-                    className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    onClick={() => {
+                    scrollToSection('faq');
+                    setactive('faq');
+                  }}
+                    className={`block py-2 pr-4 pl-3 ${active==="faq"?("dark:text-white  font-bold"):("")}  text-gray-700 rounded bg-primary-700 lg:bg-transparent dark:text-gray-400 lg:text-primary-700 lg:p-0 `}
                   >
                     FAQ
                   </a>
@@ -126,8 +142,11 @@ const Navbar = () => {
 
                 <li>
                   <a
-                    onClick={() => scrollToSection('contact')}
-                    className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    onClick={() => {
+                    scrollToSection('contact');
+                    setactive('contact');
+                  }}
+                    className={`block py-2 pr-4 pl-3 ${active==="contact"?("dark:text-white  font-bold"):("")}  text-gray-700 rounded bg-primary-700 lg:bg-transparent dark:text-gray-400 lg:text-primary-700 lg:p-0 `}
                   >
                     Contact Us
                   </a>
