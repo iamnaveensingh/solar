@@ -11,14 +11,14 @@ const Contact = () => {
             <h2 className="pb-8 mb-8 border-b border-gray-200  dark:border-gray-700 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                 Contact Us
             </h2>
-            <div className=' flex flex-wrap  mb-2'>
-                <div className='w-[500px]'>
+            <div className=' flex flex-wrap justify-between mb-2'>
+                <div className='w-[460px]'>
 
                     <img src={owner} className='rounded-lg drop-shadow-2xl mb-6 h-80 m-auto hover:scale-105' alt="Owner" />
                     <p><b>Messgae: </b>Lorem,Porro tempore dignissimos quis ut magnam, repudiandae nesciunt eos est recusandae reprehenderit libero doloribus eaque eius totam voluptatum tenetur, perspiciatis, optio mollitia sed id temporibus inventore? Voluptates, expedita animi laudantium, distinctio asperiores perspiciatis modi  obcaecati, optio blanditiis.</p>
 
                 </div>
-                <div className='w-[500px] lg:my-auto lg:px-10  my-16'>
+                <div className='w-[460px] lg:my-auto lg:px-10  my-16'>
                     <div className="">
 
                         <h2 className=" mb-8 text-2xl tracking-tight font-extrabold text-gray-900 dark:text-white">
@@ -49,7 +49,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-[500px]'>
+                <div className='w-[460px]'>
                     <iframe className='max-h-full drop-shadow-xl h-[500px] w-full rounded-lg' src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d19084.765118067433!2d75.95036600675856!3d24.646258431740456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39656d85cc2af005%3A0x34f2c67392827bfc!2sPoornima%20colony%20%2C%20suvidha%20nagar%20in%20front%20of%20mariyam%20hospital%20ramganjmandi%2C%20Kota%2C%20Rajasthan%20326519!3m2!1d24.647607999999998!2d75.9495436!5e0!3m2!1sen!2sin!4v1696818055394!5m2!1sen!2sin" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
                 </div>
 
