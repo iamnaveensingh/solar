@@ -15,7 +15,7 @@ const Model = ({ image, HighQualityIMG }) => {
     return (
         <div>
             <img onClick={toggle} src={image} alt="image" className="h-auto hover:rotate-2 hover:scale-100 max-w-full rounded-lg" />
-            <div className={`fixed flex justify-center items-center bg-black bg-opacity-50 backdrop-blur-sm  p-4  inset-0  w-full h-full ${open}   p-4   h-screen`}>
+            <div className={`fixed flex justify-center items-center z-50 bg-black bg-opacity-50 backdrop-blur-sm  p-4  inset-0  w-full h-full ${open}   p-4   h-screen`}>
                 <div className="relative border-2 border-orange-400 bg-white rounded-lg shadow dark:bg-gray-700">
                     <button onClick={toggle} className="border-2 border-rose-500 absolute top-3 right-2.5 text-gray-600 bg-gray-200 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-11 h-11 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" >
                         <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">

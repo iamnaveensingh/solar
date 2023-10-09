@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <>
       <header >
-        <nav className="bg-gray-100 drop-shadow-lg fixed w-full z-50 border-gray-200 shadow-lg px-1 lg:px-6 py-1 dark:bg-gray-800">
+        <nav className="bg-gray-100 drop-shadow-lg fixed w-full z-40 border-gray-200 shadow-lg px-1 lg:px-6 py-1 dark:bg-gray-800">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="/" className="flex items-center">
               <Logo />
@@ -31,7 +31,7 @@ const Navbar = () => {
                   href="tel:+91 77373 30685"
                   className="text-white lg:hidden hover:text-black hover:scale-105 hover:font-bold hover:bg-blue-800 bg-blue-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg px-4 lg:min-w-[140px] min-w-[113px] lg:px-5 py-1 lg:py-2 mr-1 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
                 >
-                  <div className="flex text-sm  lg:text-lg">
+                  <div className="flex text-sm lg:text-lg">
                     <IoCall className="lg:text-2xl text-xl lg:mr-1 mr-1 lg:mt-1" />
                     Call Now
                   </div>
