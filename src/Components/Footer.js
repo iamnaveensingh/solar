@@ -10,7 +10,7 @@ export default function App() {
           class="text-neutral-800 dark:text-neutral-400 sm:inline block"
           href="/"
         >
-         	&nbsp; VijayShree Solar Corparation
+         	&nbsp; VijayShree Solar Corporation
         </a>
       </div>
     </footer>

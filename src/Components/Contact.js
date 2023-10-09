@@ -22,7 +22,7 @@ const Contact = () => {
                     <div className="">
 
                         <h2 className=" mb-8 text-2xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-                            VijayShree Solar Corparation
+                            VijayShree Solar Corporation
                         </h2>
                         <h2><b>Owner Name : </b>VijayShree </h2>
                         <a href="mailto:owner@gmail.com">
