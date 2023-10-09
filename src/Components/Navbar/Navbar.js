@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <>
       <header >
-        <nav className="bg-white drop-shadow-lg  border-gray-200 shadow-lg px-1 lg:px-6 py-1 dark:bg-gray-800">
+        <nav className="bg-gray-100 drop-shadow-lg  border-gray-200 shadow-lg px-1 lg:px-6 py-1 dark:bg-gray-800">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="/" className="flex items-center">
               <Logo />
